@@ -39,12 +39,11 @@ dependencies {
 
     // ViewModel
     implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.viewmodel.savedstate)     // Saved state module for ViewModel
+    annotationProcessor(libs.lifecycle.compiler)
+
     // LiveData
     implementation(libs.lifecycle.livedata)
-    // Saved state module for ViewModel
-    implementation(libs.lifecycle.viewmodel.savedstate)
-    // Annotation processor
-    annotationProcessor(libs.lifecycle.compiler)
 
     implementation(libs.appcompat)
     implementation(libs.material)
